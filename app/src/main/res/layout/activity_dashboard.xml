@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="226dp"
+        android:layout_height="150dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/background_after_remove"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELLO THERE WELCOME BACK"
+        android:fontFamily="@font/staatliches"
+        android:textColor="@color/black"
+        android:transitionName="logo_text"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/slogon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In to continue"
+        android:textColor="@color/black"
+        android:transitionName="signin_tran"
+        android:fontFamily="@font/staatliches"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:transitionName="username_tran"
+            android:hint="Username"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:transitionName="password_trans"
+            android:hint="password"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="20dp"
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forget Password"
+            android:textColor="@color/black"
+            android:layout_gravity="right"
+            android:transitionName="forget_trans"
+            android:textSize="15sp"
+            android:fontFamily="@font/staatliches"
+            android:elevation="0dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:background="#00000000"
+            android:elevation="20dp"
+            android:fontFamily="@font/staatliches"
+            android:transitionName="go_trans"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/new_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#00000000"
+            android:elevation="20dp"
+            android:text="New User? Sign up"
+            android:textColor="@color/black"
+            android:transitionName="login_signup_tran"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".how_much_active_you_are"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/how_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How active are you in your daily life?"
+        android:fontFamily="@font/staatliches"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/this_helps"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="This helps in design your workout to fit your lifestyle"
+        android:fontFamily="@font/staatliches"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <RadioButton
+            android:id="@+id/not_at_all"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Not at all"
+            android:fontFamily="@font/staatliches"
+            android:paddingLeft="10dp"
+            android:textSize="27dp"
+            android:background="@drawable/background_radio"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/slightly_active"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Slightly active"
+            android:fontFamily="@font/staatliches"
+            android:paddingLeft="10dp"
+            android:textSize="27dp"
+            android:background="@drawable/background_radio"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/active"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:fontFamily="@font/staatliches"
+            android:paddingLeft="10dp"
+            android:textSize="27dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_radio"/>
+
+        <RadioButton
+            android:id="@+id/very_active"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:text="very active"
+            android:fontFamily="@font/staatliches"
+            android:paddingLeft="10dp"
+            android:textSize="27dp"
+            android:background="@drawable/background_radio"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="continue"
+        android:textColor="@color/black"
+        android:background="#00000000"
+        android:fontFamily="@font/staatliches"
+        android:textSize="26sp"
+        android:textAlignment="textStart"
+        android:drawableRight="@drawable/_my_right_arrow"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+
+</LinearLayout>
