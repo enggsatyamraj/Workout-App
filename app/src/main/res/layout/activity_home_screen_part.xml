@@ -8,11 +8,12 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/relative_layout_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:textAlignment="center">
+        tools:layout_editor_absoluteY="15dp">
 
         <TextView
             android:id="@+id/feed"
@@ -22,65 +23,106 @@
             android:fontFamily="@font/staatliches"
             android:text="FEED"
             android:textColor="@color/black"
-            android:textSize="35sp" />
+            android:textSize="40sp"
+            />
 
         <ImageView
             android:id="@+id/profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="240dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="13dp"
             android:layout_toRightOf="@+id/feed"
             android:src="@drawable/user_regular"
-            android:textAlignment="center"
-            android:layout_marginTop="13dp"/>
+            android:textAlignment="center" />
+
         <ImageView
             android:id="@+id/notes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/note_sticky_solid"
-            android:layout_toRightOf="@+id/profile"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="13dp"
-            android:textAlignment="center"/>
+            android:layout_toRightOf="@+id/profile"
+            android:src="@drawable/note_sticky_solid"
+            android:textAlignment="center" />
 
         <ImageButton
+            android:id="@+id/bell_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/bell_solid"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/notes"
             android:background="@color/white"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"/>
+            android:src="@drawable/bell_solid" />
     </RelativeLayout>
 
-    <RelativeLayout
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="705dp">
+        android:background="@color/hello_color"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
-            android:id="@+id/tv_feed"
+            android:id="@+id/linear_feed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/staatliches"
             android:text="Feed"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:layout_marginLeft="5dp"/>
+            android:textSize="23sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"/>
 
         <TextView
+            android:id="@+id/linear_plan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/tv_feed"
+            android:text="PLAN"
             android:fontFamily="@font/staatliches"
-            android:text="plan"
-            android:textSize="20sp"
             android:textColor="@color/black"
-            android:layout_marginLeft="10dp"/>
+            android:textSize="23sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/linear_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="workout"
+            android:fontFamily="@font/staatliches"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/linear_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="progress"
+            android:fontFamily="@font/staatliches"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/linear_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="setting"
+            android:layout_weight="1"
+            android:fontFamily="@font/staatliches"
+            android:textColor="@color/black"
+            android:textSize="23sp"/>
 
 
-    </RelativeLayout>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

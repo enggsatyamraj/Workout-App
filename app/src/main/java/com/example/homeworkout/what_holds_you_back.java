@@ -2,7 +2,9 @@ package com.example.homeworkout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -44,6 +46,18 @@ public class what_holds_you_back extends AppCompatActivity {
         not_enough_confidence.setAnimation(bottom_animation);
         u_are_shy.setAnimation(bottom_animation);
         btn_continue_ur_challenges.setAnimation(bottom_animation);
+
+
+
+
+        btn_continue_ur_challenges.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(com.example.homeworkout.what_holds_you_back.this, thanks_page.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
 
 

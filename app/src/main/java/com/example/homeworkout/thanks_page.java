@@ -2,7 +2,9 @@ package com.example.homeworkout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -10,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class thanks_page extends AppCompatActivity {
+
     private static int SPLASH_SCREEEN=3000;
 
     TextView thanks , please_wait;
@@ -33,6 +36,15 @@ public class thanks_page extends AppCompatActivity {
         thanks.setAnimation(top_animation);
         please_wait.setAnimation(bottom_animation);
         check_mark.setAnimation(bottom_animation);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(thanks_page.this, Home_screen_part.class);
+                startActivity(intent);
+                finish();
+            }
+        },SPLASH_SCREEEN);
 
 
     }
