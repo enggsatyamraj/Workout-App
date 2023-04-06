@@ -29,7 +29,7 @@ public class dashboard extends AppCompatActivity {
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(dashboard.this , Home_screen_part.class);
+                Intent intent = new Intent(dashboard.this , Home_page.class);
                 startActivity(intent);
                 finish();
             }

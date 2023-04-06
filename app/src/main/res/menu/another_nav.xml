@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_feed"
+        android:title="Feed"
+        android:icon="@drawable/stopwatch_solid"/>
+
+    <item android:id="@+id/nav_discover"
+        android:title="Discover"
+        android:icon="@drawable/compass_solid"/>
+
+    <item android:id="@+id/nav_report"
+        android:title="Report"
+        android:icon="@drawable/chart_simple_solid"/>
+
+    <item android:id="@+id/nav_setting"
+        android:title="Setting"
+        android:icon="@drawable/gear_solid"/>
+</menu>

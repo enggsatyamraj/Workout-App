@@ -40,7 +40,7 @@ public class thanks_page extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(thanks_page.this, Home_screen_part.class);
+                Intent intent = new Intent(thanks_page.this, Home_page.class);
                 startActivity(intent);
                 finish();
             }
