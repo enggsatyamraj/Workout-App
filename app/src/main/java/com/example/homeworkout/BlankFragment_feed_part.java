@@ -17,7 +17,8 @@ public class BlankFragment_feed_part extends Fragment {
 
     TextView tv_abs_beginner;
 
-    LinearLayout ll_abs_beginner;
+    LinearLayout ll_abs_beginner, ll_chest_beginner;
+
 
 
 
@@ -33,6 +34,7 @@ public class BlankFragment_feed_part extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_blank_feed_part, container, false);
         ll_abs_beginner = view.findViewById(R.id.ll_abs_beginner);
+        ll_chest_beginner = view.findViewById(R.id.ll_chest_beginner);
         ll_abs_beginner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +42,16 @@ public class BlankFragment_feed_part extends Fragment {
                 startActivity(intent);
             }
         });
+
+        ll_chest_beginner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), chest_beginner.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
+
     }
 }

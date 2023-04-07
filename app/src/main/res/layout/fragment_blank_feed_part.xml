@@ -7,57 +7,7 @@
     android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:id="@+id/linear_layout_top"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:textAlignment="center"
-        android:paddingRight="20dp">
 
-        <TextView
-            android:id="@+id/feed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_weight="5"
-            android:fontFamily="@font/staatliches"
-            android:text="Workout"
-            android:textColor="@color/black"
-            android:textSize="35sp" />
-
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            android:layout_weight="1"
-            android:src="@drawable/user_regular"
-            android:textAlignment="center"
-            android:contentDescription="@string/profileimage" />
-
-        <ImageView
-            android:id="@+id/notes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="13dp"
-            android:layout_weight="1"
-            android:src="@drawable/note_sticky_solid"
-            android:textAlignment="center"
-            android:contentDescription="@string/notesimage"/>
-
-        <ImageButton
-            android:id="@+id/bell_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:background="@color/white"
-            android:src="@drawable/bell_solid"
-            android:contentDescription="@string/bell_icon" />
-    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -67,6 +17,58 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/staatliches"
+                    android:text="Workout"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/user_regular"
+                    android:textAlignment="center"
+                    android:contentDescription="@string/profileimage" />
+
+                <ImageView
+                    android:id="@+id/notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/note_sticky_solid"
+                    android:textAlignment="center"
+                    android:contentDescription="@string/notesimage"/>
+
+                <ImageButton
+                    android:id="@+id/bell_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:src="@drawable/bell_solid"
+                    android:contentDescription="@string/bell_icon" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_margin="20dp"
@@ -234,6 +236,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/ll_chest_beginner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"

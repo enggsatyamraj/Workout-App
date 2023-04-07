@@ -18,18 +18,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#3dd6bc">
+                android:background="#cfd0c3">
 
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="wrap_content"
                     android:layout_height="250dp"
-                    android:src="@drawable/jumping_jack_gif"/>
+                    android:src="@drawable/pushups_gifs"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="jumping jack 20s"
+                android:text="push-ups  x6"
                 android:fontFamily="@font/staatliches"
                 android:textColor="@color/black"
                 android:textSize="23sp"
@@ -38,13 +38,13 @@
 
             <TextView
                 android:fontFamily="@font/staatliches"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 android:textColor="@color/grey"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:text="start with your feet together and your arms b your sides, then jump up with your arms by your sides, then jump up with your feet apart and your hands overhead."/>
+                android:text="lay prone on the ground with arms supporting your body."/>
 
             <TextView
                 android:fontFamily="@font/staatliches"
@@ -55,7 +55,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="Return to this start position then do the next rip. This exercise provides a full-body workout and workout and works all your large muscle group"/>
+                android:text="keep your body straight while raising and lowering your body with your arms"/>
+
+            <TextView
+                android:fontFamily="@font/staatliches"
+                android:textSize="15sp"
+                android:layout_marginTop="23dp"
+                android:layout_width="350dp"
+                android:textColor="@color/grey"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="this excercise works the chest, shoulder, triceps , back and legs"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -66,18 +77,18 @@
                 android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"/>
-            
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Shoulder\nQuadriceps\nAdductors\nchest\nglutes\ncalves"
+                android:text="chest\ntriceps\nshoulders"
                 android:fontFamily="@font/staatliches"
                 android:textColor="@color/grey"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"/>
 
             <Button
-                android:id="@+id/start_timer"
+                android:id="@+id/start_timer_pushups"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Start"
@@ -91,7 +102,7 @@
 
 
 
-            
+
         </LinearLayout>
     </ScrollView>
 

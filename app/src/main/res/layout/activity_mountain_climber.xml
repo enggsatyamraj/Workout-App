@@ -18,18 +18,18 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#3dd6bc">
+                android:background="#f2e1de">
 
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="wrap_content"
                     android:layout_height="250dp"
-                    android:src="@drawable/jumping_jack_gif"/>
+                    android:src="@drawable/climber_mountain_gif"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="jumping jack 20s"
+                android:text="Mountain Climber  x16"
                 android:fontFamily="@font/staatliches"
                 android:textColor="@color/black"
                 android:textSize="23sp"
@@ -38,13 +38,13 @@
 
             <TextView
                 android:fontFamily="@font/staatliches"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 android:textColor="@color/grey"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="start with your feet together and your arms b your sides, then jump up with your arms by your sides, then jump up with your feet apart and your hands overhead."/>
+                android:text="Each side x8"/>
 
             <TextView
                 android:fontFamily="@font/staatliches"
@@ -55,7 +55,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="Return to this start position then do the next rip. This exercise provides a full-body workout and workout and works all your large muscle group"/>
+                android:text="start in the push-up position. bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to other."/>
+
+            <TextView
+                android:fontFamily="@font/staatliches"
+                android:textSize="15sp"
+                android:layout_marginTop="23dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/grey"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="this excercise strenthens multiple muscle groups."/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -66,18 +77,18 @@
                 android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"/>
-            
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Shoulder\nQuadriceps\nAdductors\nchest\nglutes\ncalves"
+                android:text="abs\nglutes\nquadriceps\ncalves\nlower back"
                 android:fontFamily="@font/staatliches"
                 android:textColor="@color/grey"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"/>
 
             <Button
-                android:id="@+id/start_timer"
+                android:id="@+id/start_timer_mountain_climber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Start"
@@ -91,7 +102,7 @@
 
 
 
-            
+
         </LinearLayout>
     </ScrollView>
 
