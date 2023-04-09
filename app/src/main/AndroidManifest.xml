@@ -12,6 +12,24 @@
         android:theme="@style/Theme.HomeWorkout"
         tools:targetApi="31">
         <activity
+            android:name=".bicycle_crunches_intermediate"
+            android:exported="false" />
+        <activity
+            android:name=".side_bridge_right_intermediate"
+            android:exported="false" />
+        <activity
+            android:name=".side_bridge_intermediate"
+            android:exported="false" />
+        <activity
+            android:name=".crossover_cruch_intermediate"
+            android:exported="false" />
+        <activity
+            android:name=".v_up_intermediate"
+            android:exported="false" />
+        <activity
+            android:name=".abs_intermediate"
+            android:exported="false" />
+        <activity
             android:name=".triceps_dips_beginner"
             android:exported="false" />
         <activity
