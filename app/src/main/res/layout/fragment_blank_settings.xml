@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BlankFragment_settings">
+    tools:context=".BlankFragment_settings"
+    android:paddingLeft="10dp"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -13,6 +15,62 @@
         android:fontFamily="@font/staatliches"
         android:text="Settings"
         android:textColor="@color/black"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        android:layout_marginBottom="30dp"/>
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="workout Setting"
+        android:drawableLeft="@drawable/baseline_menu_24"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/staatliches"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/general_setting"
+        android:fontFamily="@font/staatliches"
+        android:drawableLeft="@drawable/settings_icon"
+        android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="voice options(tts)"
+        android:drawableLeft="@drawable/baseline_mic_24"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/staatliches"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="language options"
+        android:fontFamily="@font/staatliches"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/baseline_language_24"
+        android:drawablePadding="15dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sync to google fit"
+        android:fontFamily="@font/staatliches"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/baseline_sync_24"
+        android:drawablePadding="15dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

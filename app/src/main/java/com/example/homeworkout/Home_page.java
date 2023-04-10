@@ -40,7 +40,7 @@ public class Home_page extends AppCompatActivity {
                 int id = item.getItemId();
 
                 if(id == R.id.nav_feed){
-                    frag_load(new BlankFragment_feed_part(), true);
+                    frag_load(new BlankFragment_feed_part(), false);
                 }
                 else if(id == R.id.nav_discover){
                     frag_load(new BlankFragment_discover(), false);
