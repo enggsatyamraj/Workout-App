@@ -9,7 +9,7 @@
         android:icon="@drawable/compass_solid"/>
 
     <item android:id="@+id/nav_report"
-        android:title="Report"
+        android:title="Shoppings"
         android:icon="@drawable/chart_simple_solid"/>
 
     <item android:id="@+id/nav_setting"

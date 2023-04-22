@@ -126,4 +126,11 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="general_setting">general Setting</string>
+    <string name="restart_progress">Restart Progress</string>
+    <string name="sound_option">sound Option</string>
+    <string name="coutdown_time">Coutdown Time</string>
+    <string name="training_rest">Training rest</string>
+    <string name="gender">Gender</string>
+    <string name="workout_settings">Workout Settings</string>
+    <string name="metrics_amp_impoerial_units"><![CDATA[Metrics & Impoerial Units]]></string>
 </resources>
